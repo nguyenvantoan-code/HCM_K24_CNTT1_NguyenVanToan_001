@@ -1,6 +1,7 @@
 package com.re.hackathong.libary_book.dto.request;
 
 
+import com.re.hackathong.libary_book.entity.BookStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -15,5 +16,5 @@ public class BookRequest {
     @Positive(message = "Price phải lớn hơn 0")
     private Double price;
     @NotNull(message = "Status không được để trống")
-    private boolean status;
+    private BookStatus status;
 }

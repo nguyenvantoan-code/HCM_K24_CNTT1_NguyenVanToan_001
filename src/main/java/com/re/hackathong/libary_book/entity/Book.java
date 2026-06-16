@@ -20,4 +20,5 @@ public class Book {
     @Enumerated(EnumType.STRING)
     private BookStatus status;
     @Column(name="is_deleted")
-    private Boolean isDeleted=false; }
+    private Boolean isDeleted=false;
+}
